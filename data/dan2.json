@@ -1,0 +1,13 @@
+{
+  "title": "二段",
+  "songs": [
+    { "title": "テスト2-1", "artist": "テスト" },
+    { "title": "テスト2-2", "artist": "テスト" },
+    { "title": "テスト2-3", "artist": "テスト" },
+    { "title": "テスト2-4", "artist": "テスト" }
+  ],
+  "conditions": [
+    "テスト2"
+  ],
+  "download": "data/dan_2.zip"
+}

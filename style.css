@@ -1,0 +1,396 @@
+/* リセットとベーススタイル */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a3198 50%, #371e72 100%);
+  background-attachment: fixed;
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ヘッダーの改善 */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(135, 206, 235, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+header a:hover {
+  background: rgba(135, 206, 235, 0.2);
+  transform: translateY(-2px);
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* タイトルの改善 */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #87ceeb, #fff, #87ceeb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(135, 206, 235, 0.5);
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #87ceeb, transparent);
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #87ceeb;
+  border-bottom: 2px solid rgba(135, 206, 235, 0.3);
+  padding-bottom: 10px;
+  position: relative;
+}
+
+h2::before {
+  content: '◆';
+  color: #87ceeb;
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+/* 段位一覧のグリッド改善 */
+.dan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* 段位カードの基本スタイル */
+.dan-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+  border: 2px solid rgba(135, 206, 235, 0.4);
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 2px solid;
+  /* アニメーションの初期状態 */
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.dan-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 20px;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: rotate(45deg);
+  transition: left 0.6s ease;
+  filter: blur(10px);
+}
+
+.dan-card:hover::before {
+  left: 150%;
+}
+
+.dan-card:hover {
+  background: linear-gradient(135deg, rgba(42, 82, 152, 0.95), rgba(30, 60, 114, 0.95));
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  border-color: #87ceeb;
+}
+
+.dan-card:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* 初段～五段：青系 */
+.dan-card[href*="dan1"], .dan-card[href*="dan2"], .dan-card[href*="dan3"], 
+.dan-card[href*="dan4"], .dan-card[href*="dan5"] {
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+  border-color: rgba(135, 206, 235, 0.6);
+}
+
+.dan-card[href*="dan1"]:hover, .dan-card[href*="dan2"]:hover, .dan-card[href*="dan3"]:hover, 
+.dan-card[href*="dan4"]:hover, .dan-card[href*="dan5"]:hover {
+  background: linear-gradient(135deg, rgba(42, 82, 152, 0.95), rgba(30, 60, 114, 0.95));
+  border-color: #87ceeb;
+}
+
+/* 六段～十段：赤系 */
+.dan-card[href*="dan6"], .dan-card[href*="dan7"], .dan-card[href*="dan8"], 
+.dan-card[href*="dan9"], .dan-card[href*="dan10"] {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(220, 20, 60, 0.9));
+  border-color: rgba(255, 99, 71, 0.6);
+}
+
+.dan-card[href*="dan6"]:hover, .dan-card[href*="dan7"]:hover, .dan-card[href*="dan8"]:hover, 
+.dan-card[href*="dan9"]:hover, .dan-card[href*="dan10"]:hover {
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.95), rgba(139, 0, 0, 0.95));
+  border-color: #ff6347;
+}
+
+/* 玄人～超人：銀系 */
+.dan-card[href*="dan11"], .dan-card[href*="dan12"], .dan-card[href*="dan13"] {
+  background: linear-gradient(135deg, rgba(105, 105, 105, 0.9), rgba(169, 169, 169, 0.9));
+  border-color: rgba(192, 192, 192, 0.8);
+}
+
+.dan-card[href*="dan11"]:hover, .dan-card[href*="dan12"]:hover, .dan-card[href*="dan13"]:hover {
+  background: linear-gradient(135deg, rgba(169, 169, 169, 0.95), rgba(105, 105, 105, 0.95));
+  border-color: #c0c0c0;
+}
+
+/* 達人：金系 */
+.dan-card[href*="dan14"] {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.9), rgba(255, 215, 0, 0.9));
+  border-color: rgba(255, 215, 0, 0.8);
+}
+
+.dan-card[href*="dan14"]:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.95), rgba(184, 134, 11, 0.95));
+  border-color: #ffd700;
+}
+
+/* 条件セクションの改善 */
+.conditions {
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(135, 206, 235, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.conditions h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #87ceeb;
+  border-bottom: 2px solid rgba(135, 206, 235, 0.3);
+  padding-bottom: 10px;
+}
+
+.conditions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.conditions li {
+  margin: 12px 0;
+  padding: 10px 15px;
+  background: rgba(255, 221, 136, 0.1);
+  border-left: 4px solid #ffdd88;
+  border-radius: 5px;
+  color: #ffdd88;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.conditions li:hover {
+  background: rgba(255, 221, 136, 0.15);
+  transform: translateX(5px);
+}
+
+.conditions li::before {
+  content: '✓';
+  color: #ffdd88;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ダウンロードセクションの改善 */
+.download {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #3366ff, #003366);
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(51, 102, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.download-btn:hover::before {
+  left: 100%;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(135deg, #3355cc, #002244);
+  box-shadow: 0 10px 30px rgba(51, 102, 255, 0.4);
+}
+
+/* フッターの改善 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 40px;
+  border-top: 1px solid rgba(135, 206, 235, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .dan-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .dan-card {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+  }
+  
+  header ul {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  header a {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  
+  .conditions {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .dan-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+  
+  .dan-card {
+    padding: 15px 8px;
+    font-size: 1.3rem;
+  }
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* アニメーションクラス - 遅延はJavaScriptで動的に設定 */
+.dan-card.animate {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* スクロールバーのカスタマイズ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #371e72, #2a5298);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2a5298, #371e72);
+}

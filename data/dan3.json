@@ -1,0 +1,13 @@
+{
+  "title": "三段",
+  "songs": [
+    { "title": "テスト3-1", "artist": "テスト" },
+    { "title": "テスト3-2", "artist": "テスト" },
+    { "title": "テスト3-3", "artist": "テスト" },
+    { "title": "テスト3-4", "artist": "テスト" }
+  ],
+  "conditions": [
+    "テスト3"
+  ],
+  "download": "data/dan_3.zip"
+}
