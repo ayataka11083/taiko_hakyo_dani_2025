@@ -1,3 +1,25 @@
+// ナビゲーション読み込み機能
+async function loadNavigation() {
+  try {
+    const response = await fetch('navigation.html');
+    const navigationHTML = await response.text();
+    
+    // 既存のheaderを置き換え
+    const existingHeader = document.querySelector('header');
+    if (existingHeader) {
+      existingHeader.outerHTML = navigationHTML;
+    } else {
+      // headerがない場合はbodyの最初に挿入
+      document.body.insertAdjacentHTML('afterbegin', navigationHTML);
+    }
+  } catch (error) {
+    console.error('ナビゲーション読み込みエラー:', error);
+  }
+}
+
+// ページ読み込み時にナビゲーションを読み込む
+document.addEventListener('DOMContentLoaded', loadNavigation);
+
 const params = new URLSearchParams(window.location.search);
 const danId = params.get("id") || "dan1";
 

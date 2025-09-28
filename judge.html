@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>合否判定 - あやたか発狂段位2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="judge-page">
+    <h1>合否判定</h1>
+    
+    <div class="judge-form">
+      <h2>判定入力</h2>
+      <form id="judge-form">
+        <div class="input-group">
+          <label for="good-count">良:</label>
+          <input type="number" id="good-count" min="0" value="0">
+        </div>
+        
+        <div class="input-group">
+          <label for="ok-count">可:</label>
+          <input type="number" id="ok-count" min="0" value="0">
+        </div>
+        
+        <div class="input-group">
+          <label for="bad-count">不可:</label>
+          <input type="number" id="bad-count" min="0" value="0">
+        </div>
+        
+        <button type="button" id="judge-btn">判定</button>
+      </form>
+    </div>
+
+    <div class="judge-result" id="judge-result" style="display: none;">
+      <h2>判定結果</h2>
+      <div id="result-content"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="judge.js"></script>
+</body>
+</html>
