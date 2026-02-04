@@ -1,0 +1,14 @@
+{
+  "title": "玄人",
+  "songs": [
+    { "title": "VVelcome", "artist": "MisoilePunch♪ 「SOUND VOLTEX」より" },
+    { "title": "デッドマンズバラッド", "artist": "cosMo＠暴走P" },
+    { "title": "Viyella's Scream", "artist": "Laur 「オンゲキ」より" },
+    { "title": "龍王殺しのプリンセス(BegissoR's Remix)", "artist": "BegissoR" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 4741 未満",
+    "可の数 + 不可の数 × 6 が 2857 未満"
+  ],
+  "download": "contents/dan_11.zip"
+}

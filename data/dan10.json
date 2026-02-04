@@ -1,0 +1,14 @@
+{
+  "title": "十段",
+  "songs": [
+    { "title": "Nocturnal Tune", "artist": "ジェリコの法則" },
+    { "title": "眠れる森の少女", "artist": "清風明月(Drop×葉月ゆら)" },
+    { "title": "Psychedelic Industry", "artist": "ジェリコの法則" },
+    { "title": "ShinkSt.mix", "artist": "Shinkai@月給850円P" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 4026 未満",
+    "可の数 + 不可の数 × 6 が 2426 未満"
+  ],
+  "download": "contents/dan_10.zip"
+}

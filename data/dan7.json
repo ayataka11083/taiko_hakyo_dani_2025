@@ -1,0 +1,14 @@
+{
+  "title": "七段",
+  "songs": [
+    { "title": "カリオストロの穿孔", "artist": "隣の庭は青い(庭師+Aoi)" },
+    { "title": "Taiko Drum Monster", "artist": "steμ feat.siroa" },
+    { "title": "Aurora", "artist": "Lime" },
+    { "title": "中学2年生のアンドロイド", "artist": "カルロス袴田(サイゼP) feat.あやぽんず＊ 「CHUNITHM」より" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 3662 未満",
+    "可の数 + 不可の数 × 6 が 2207 未満"
+  ],
+  "download": "contents/dan_7.zip"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "超人",
+  "songs": [
+    { "title": "The Empress", "artist": "UNDEAD CORPORATION" },
+    { "title": "Deaf-mutes", "artist": "moro" },
+    { "title": "SUPER REACTOR", "artist": "Kobaryo feat. HiTNEX-X 「WACCA」より" },
+    { "title": "冥桜", "artist": "AMAZE" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 5534 未満",
+    "可の数 + 不可の数 × 6 が 3335 未満"
+  ],
+  "download": "contents/dan_13.zip"
+}

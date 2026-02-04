@@ -1,0 +1,14 @@
+{
+  "title": "五段",
+  "songs": [
+    { "title": "GOODTEK", "artist": "EBIMAYO" },
+    { "title": "HANIPAGANDA", "artist": "暁Records" },
+    { "title": "χ談", "artist": "かねこちはる" },
+    { "title": "その群青が愛しかったようだった", "artist": "n-buna feat.ヤギヌマカナ 「CHUNITHM」より" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 3237 未満",
+    "可の数 + 不可の数 × 6 が 1951 未満"
+  ],
+  "download": "contents/dan_5.zip"
+}

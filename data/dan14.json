@@ -1,0 +1,14 @@
+{
+  "title": "達人",
+  "songs": [
+    { "title": "Wish Upon a Star", "artist": "t+pazolite" },
+    { "title": "チル螟ｪ 蜊ゃんの大∵ｮ陌ｹｖ=9険っ！☆", "artist": "Xe" },
+    { "title": "詰込ノ舞", "artist": "" },
+    { "title": "東方妖々夢 ULTIMATE MEDLEY", "artist": "uma vs. モリモリあつし 「SOUND VOLTEX」より" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 7513 未満",
+    "可の数 + 不可の数 × 6 が 4528 未満"
+  ],
+  "download": "contents/dan_14.zip"
+}

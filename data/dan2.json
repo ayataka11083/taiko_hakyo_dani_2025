@@ -1,13 +1,14 @@
 {
   "title": "二段",
   "songs": [
-    { "title": "テスト2-1", "artist": "テスト" },
-    { "title": "テスト2-2", "artist": "テスト" },
-    { "title": "テスト2-3", "artist": "テスト" },
-    { "title": "テスト2-4", "artist": "テスト" }
+    { "title": "六華の舞", "artist": "ぺのれり" },
+    { "title": "龍と少女とデコヒーレンス", "artist": "黒猫ダンジョン 「beatmania IIDX」より" },
+    { "title": "Rainbow Light", "artist": "こふ 「VOEZ」より" },
+    { "title": "トイマチック☆パレード!!", "artist": "DJ Genki" }
   ],
   "conditions": [
-    "テスト2"
+    "可の数 + 不可の数 × 6 が 2609 未満",
+    "可の数 + 不可の数 × 6 が 1572 未満"
   ],
-  "download": "data/dan_2.zip"
+  "download": "contents/dan_2.zip"
 }

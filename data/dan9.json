@@ -1,0 +1,14 @@
+{
+  "title": "九段",
+  "songs": [
+    { "title": "Ethereality", "artist": "HAGISOPH" },
+    { "title": "Apocalypse Nemesis -Meteor Noise-", "artist": "kanone" },
+    { "title": "イワシがつちからはえてくるんだ", "artist": "" },
+    { "title": "RED Wonderland", "artist": "清風明月(Drop×葉月ゆら)" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 4320 未満",
+    "可の数 + 不可の数 × 6 が 2603 未満"
+  ],
+  "download": "contents/dan_9.zip"
+}

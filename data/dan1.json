@@ -1,13 +1,14 @@
 {
   "title": "初段",
   "songs": [
-    { "title": "テスト1-1", "artist": "テスト" },
-    { "title": "テスト1-2", "artist": "テスト" },
-    { "title": "テスト1-3", "artist": "テスト" },
-    { "title": "テスト1-4", "artist": "テスト" }
+    { "title": "天火明命", "artist": "削除 「maimai」より" },
+    { "title": "VICTORIA", "artist": "Cranky" },
+    { "title": "Ultimate☆8bitCrash", "artist": "mikki / 篠螺悠那" },
+    { "title": "タイコロール", "artist": "steμ feat.siroa" }
   ],
   "conditions": [
-    "テスト1"
+    "可の数 + 不可の数 × 6 が 2793 未満",
+    "可の数 + 不可の数 × 6 が 1683 未満"
   ],
-  "download": "data/dan_1.zip"
+  "download": "contents/dan_1.zip"
 }

@@ -1,0 +1,14 @@
+{
+  "title": "四段",
+  "songs": [
+    { "title": "Tic Exe", "artist": "Se-U-Ra 「SOUND VOLTEX」より" },
+    { "title": "プチポチ", "artist": "" },
+    { "title": "XHRONOXAPSULΞ", "artist": "Silentroom 「SOUND VOLTEX」より" },
+    { "title": "B.B.K.K.B.K.K. (USAO Remix)", "artist": "USAO" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 2957 未満",
+    "可の数 + 不可の数 × 6 が 1782 未満"
+  ],
+  "download": "contents/dan_4.zip"
+}

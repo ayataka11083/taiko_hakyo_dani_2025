@@ -1,0 +1,14 @@
+{
+  "title": "八段",
+  "songs": [
+    { "title": "Angel's Salad", "artist": "かたぎり" },
+    { "title": "刻竜 ～Kokuryu～", "artist": "あず♪" },
+    { "title": "轟絶 分断者", "artist": "桑原理一郎 「モンスターストライク」より" },
+    { "title": "無人区 Vacuum Track#ADD8E6", "artist": "Nokany" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 3754 未満",
+    "可の数 + 不可の数 × 6 が 2262 未満"
+  ],
+  "download": "contents/dan_8.zip"
+}

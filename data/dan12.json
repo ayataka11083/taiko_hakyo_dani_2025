@@ -1,0 +1,14 @@
+{
+  "title": "名人",
+  "songs": [
+    { "title": "QZKago Requiem", "artist": "t+pazolite 「maimai」より" },
+    { "title": "in the dark", "artist": "Xe" },
+    { "title": "Venomous Firefly", "artist": "かめりあ 「SOUND VOLTEX」より" },
+    { "title": "CO5M1C R4ILR0AD", "artist": "kanone" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 4522 未満",
+    "可の数 + 不可の数 × 6 が 2725 未満"
+  ],
+  "download": "contents/dan_12.zip"
+}

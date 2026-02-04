@@ -1,13 +1,14 @@
 {
   "title": "三段",
   "songs": [
-    { "title": "テスト3-1", "artist": "テスト" },
-    { "title": "テスト3-2", "artist": "テスト" },
-    { "title": "テスト3-3", "artist": "テスト" },
-    { "title": "テスト3-4", "artist": "テスト" }
+    { "title": "Chronomia", "artist": "Lime" },
+    { "title": "不可逆的運命ディストピア", "artist": "猫足蕾(芹澤優) 「ワールドダイスター」より" },
+    { "title": "Agent Hustle & Dr. Hassle", "artist": "Cory Tarrow(BNSI)" },
+    { "title": "信仰は儚き人間の為に ～ Arr.Demetori", "artist": "Demetori 「SOUND VOLTEX」より" }
   ],
   "conditions": [
-    "テスト3"
+    "可の数 + 不可の数 × 6 が 3239 未満",
+    "可の数 + 不可の数 × 6 が 1952 未満"
   ],
-  "download": "data/dan_3.zip"
+  "download": "contents/dan_3.zip"
 }

@@ -1,0 +1,14 @@
+{
+  "title": "overjoy",
+  "songs": [
+    { "title": "業務-親切な客とこの世のクレーマ－について-", "artist": "闇凶猛＆穴西敏朗" },
+    { "title": "runengon", "artist": "antiPLUR" },
+    { "title": "QZKago Requiem", "artist": "t+pazolite 「maimai」より" },
+    { "title": "Miracle KAMIKAZE", "artist": "nekutsu" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 7233 未満",
+    "可の数 + 不可の数 × 6 が 4359 未満"
+  ],
+  "download": "contents/dan_15.zip"
+}

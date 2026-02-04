@@ -1,0 +1,14 @@
+{
+  "title": "六段",
+  "songs": [
+    { "title": "初音ミクの消失-劇場版-", "artist": "" },
+    { "title": "Native 'Funk' Face", "artist": "ジェリコの法則" },
+    { "title": "VOLUPTE", "artist": "mikki / 篠螺悠那" },
+    { "title": "Grayed Out -Antifront-", "artist": "Getty vs. DJ DiA" }
+  ],
+  "conditions": [
+    "可の数 + 不可の数 × 6 が 3295 未満",
+    "可の数 + 不可の数 × 6 が 1986 未満"
+  ],
+  "download": "contents/dan_6.zip"
+}
