@@ -52,6 +52,7 @@ fetch(`data/${danId}.json`)
 
     // ダウンロードリンク
     document.getElementById("download-link").href = data.download;
+    document.getElementById("download-ml-link").href = data.download_ml;
   })
   .catch(err => {
     console.error("データ読み込みエラー:", err);

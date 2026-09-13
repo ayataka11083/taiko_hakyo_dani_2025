@@ -285,6 +285,10 @@ h2::before {
 .download {
   text-align: center;
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .download-btn {
@@ -321,6 +325,16 @@ h2::before {
   transform: translateY(-3px) scale(1.05);
   background: linear-gradient(135deg, #3355cc, #002244);
   box-shadow: 0 10px 30px rgba(51, 102, 255, 0.4);
+}
+
+.download-btn-ml {
+  background: linear-gradient(135deg, #7b4dff, #3a1d80);
+  box-shadow: 0 6px 20px rgba(123, 77, 255, 0.3);
+}
+
+.download-btn-ml:hover {
+  background: linear-gradient(135deg, #6a3de6, #2c1566);
+  box-shadow: 0 10px 30px rgba(123, 77, 255, 0.4);
 }
 
 /* フッターの改善 */

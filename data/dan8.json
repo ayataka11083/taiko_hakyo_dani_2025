@@ -10,5 +10,6 @@
     "可の数 + 不可の数 × 6 が 3754 未満",
     "可の数 + 不可の数 × 6 が 2262 未満"
   ],
-  "download": "contents/dan_8.zip"
+  "download": "contents/dan_8.zip",
+  "download_ml": "contents/dan_8_ml.zip"
 }
